@@ -285,7 +285,6 @@ public class RestClient {
      * @return JSON-encoded result or null when there's no content returned
      * @throws RestException when an HTTP-level error occurs
      * @throws IOException   when an error reading the response occurs
-     * @see https://jira.atlassian.com/browse/JRA-29304
      */
     public JSON post(URI uri, String payload) throws RestException, IOException {
         String quoted = null;
