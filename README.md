@@ -1,5 +1,5 @@
 # RESTiny
-[![Build Status](https://travis-ci.org/shibme/jira-api.svg)](https://travis-ci.org/shibme/jira-api)
+[![Build Status](https://travis-ci.com/shibme/jira-api.svg)](https://travis-ci.com/shibme/jira-api)
 [![Download](https://api.bintray.com/packages/shibme/maven/jira-api/images/download.svg)](https://bintray.com/shibme/maven/jira-api/_latestVersion)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/shibme/jira-api.svg)](http://isitmaintained.com/project/shibme/jira-api "Percentage of issues still open")
 
