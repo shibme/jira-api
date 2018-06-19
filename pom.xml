@@ -118,12 +118,13 @@
                             <failOnExistingTagRelease>false</failOnExistingTagRelease>
                             <overwriteTag>true</overwriteTag>
                             <message>
-                                Use the maven dependency: [![Maven
-                                Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
+                                ${project.groupId}:${project.artifactId}
+                                https://mvnrepository.com/artifact/${project.groupId}/${project.artifactId}
                             </message>
                             <description>
-                                Use the maven dependency: [![Maven
-                                Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
+                                Use the maven dependency
+                                [![Maven Central]
+                                (https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </description>
                         </configuration>
                     </execution>
