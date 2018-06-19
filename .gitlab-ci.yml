@@ -9,8 +9,8 @@ cache:
     - .m2/repository/
     - target/
 
-deploy:
-  stage: deploy-to-bintray
+Bintray Deployment:
+  stage: deploy
   script:
     - mvn $MAVEN_CLI_OPTS clean deploy
   only:

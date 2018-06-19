@@ -117,17 +117,14 @@
                             <tag>${project.artifactId}-${project.version}</tag>
                             <failOnExistingTagRelease>false</failOnExistingTagRelease>
                             <overwriteTag>true</overwriteTag>
-                            <message>Use the maven dependency: [![Maven
+                            <message>
+                                Use the maven dependency: [![Maven
                                 Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </message>
-                            <description>Use the maven dependency: [![Maven
+                            <description>
+                                Use the maven dependency: [![Maven
                                 Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </description>
-                            <fileSets>
-                                <fileSet>
-                                    <directory>${project.build.directory}</directory>
-                                </fileSet>
-                            </fileSets>
                         </configuration>
                     </execution>
                 </executions>
