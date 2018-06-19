@@ -8,23 +8,23 @@
     <version>0.1.1</version>
     <name>JIRA API</name>
     <description>A simple JIRA API Client</description>
-    <url>https://github.com/shibme/jira-api</url>
+    <url>https://gitlab.com/shibme/jira-api</url>
 
     <issueManagement>
-        <url>https://github.com/shibme/jira-api/issues</url>
+        <url>https://gitlab.com/shibme/jira-api/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
 
     <scm>
-        <url>https://github.com/shibme/jira-api</url>
-        <connection>scm:git:https://github.com/shibme/jira-api.git</connection>
-        <developerConnection>scm:git:shibme@github.com:shibme/jira-api.git</developerConnection>
+        <url>https://gitlab.com/shibme/jira-api</url>
+        <connection>scm:git:https://gitlab.com/shibme/jira-api.git</connection>
+        <developerConnection>scm:git:shibme@gitlab.com:shibme/jira-api.git</developerConnection>
     </scm>
 
     <developers>
         <developer>
             <name>Shibly Meeran</name>
-            <url>https://github.com/shibme</url>
+            <url>https://gitlab.com/shibme</url>
             <id>shibme</id>
         </developer>
     </developers>
@@ -101,25 +101,28 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>de.jutzig</groupId>
-                <artifactId>github-release-plugin</artifactId>
-                <version>1.2.0</version>
+                <groupId>me.shib.lib</groupId>
+                <artifactId>gitlab-tag-release-plugin</artifactId>
+                <version>0.1.1</version>
                 <executions>
                     <execution>
-                        <id>github-upload</id>
+                        <id>gitlab-upload</id>
                         <phase>deploy</phase>
                         <goals>
                             <goal>release</goal>
                         </goals>
                         <inherited>false</inherited>
                         <configuration>
-                            <overwriteArtifact>true</overwriteArtifact>
-                            <releaseName>${project.artifactId}-${project.version}</releaseName>
-                            <description>Might require transitive dependencies.
-                                Please take a look into pom.xml if you plan to use it manually.
-                                It is recommended to use as maven dependency to avoid issues.
+                            <serverUrl>https://gitlab.com</serverUrl>
+                            <tag>${project.artifactId}-${project.version}</tag>
+                            <failOnExistingTagRelease>false</failOnExistingTagRelease>
+                            <overwriteTag>true</overwriteTag>
+                            <message>Use the maven dependency: [![Maven
+                                Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
+                            </message>
+                            <description>Use the maven dependency: [![Maven
+                                Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </description>
-                            <tag>${project.version}</tag>
                             <fileSets>
                                 <fileSet>
                                     <directory>${project.build.directory}</directory>
