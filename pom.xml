@@ -12,7 +12,7 @@
 
     <issueManagement>
         <url>https://gitlab.com/shibme/jira-api/issues</url>
-        <system>GitHub Issues</system>
+        <system>GitLab Issues</system>
     </issueManagement>
 
     <scm>
@@ -113,7 +113,6 @@
                         </goals>
                         <inherited>false</inherited>
                         <configuration>
-                            <serverUrl>https://gitlab.com</serverUrl>
                             <tag>${project.artifactId}-${project.version}</tag>
                             <failOnExistingTagRelease>false</failOnExistingTagRelease>
                             <overwriteTag>true</overwriteTag>
