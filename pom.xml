@@ -116,8 +116,8 @@
                             <overwriteArtifact>true</overwriteArtifact>
                             <releaseName>${project.artifactId} - ${project.version}</releaseName>
                             <description>Use the maven dependency
-                                [![Maven Central]
-                                (https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
+                                [![Maven
+                                Central](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </description>
                             <tag>${project.version}</tag>
                         </configuration>
