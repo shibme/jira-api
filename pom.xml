@@ -101,30 +101,25 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>me.shib.lib</groupId>
-                <artifactId>gitlab-tag-release-plugin</artifactId>
-                <version>0.1.1</version>
+                <groupId>de.jutzig</groupId>
+                <artifactId>github-release-plugin</artifactId>
+                <version>1.2.0</version>
                 <executions>
                     <execution>
-                        <id>gitlab-upload</id>
+                        <id>github-upload</id>
                         <phase>deploy</phase>
                         <goals>
                             <goal>release</goal>
                         </goals>
                         <inherited>false</inherited>
                         <configuration>
-                            <tag>${project.artifactId}-${project.version}</tag>
-                            <failOnExistingTagRelease>false</failOnExistingTagRelease>
-                            <overwriteTag>true</overwriteTag>
-                            <message>
-                                ${project.groupId}:${project.artifactId}
-                                https://mvnrepository.com/artifact/${project.groupId}/${project.artifactId}
-                            </message>
-                            <description>
-                                Use the maven dependency
+                            <overwriteArtifact>true</overwriteArtifact>
+                            <releaseName>${project.artifactId} - ${project.version}</releaseName>
+                            <description>Use the maven dependency
                                 [![Maven Central]
                                 (https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${project.groupId}/${project.artifactId})
                             </description>
+                            <tag>${project.version}</tag>
                         </configuration>
                     </execution>
                 </executions>
