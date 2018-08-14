@@ -8,23 +8,23 @@
     <version>0.1.1</version>
     <name>JIRA API</name>
     <description>A simple JIRA API Client</description>
-    <url>https://gitlab.com/shibme/jira-api</url>
+    <url>https://github.com/shibme/jira-api</url>
 
     <issueManagement>
-        <url>https://gitlab.com/shibme/jira-api/issues</url>
+        <url>https://github.com/shibme/jira-api/issues</url>
         <system>GitLab Issues</system>
     </issueManagement>
 
     <scm>
-        <url>https://gitlab.com/shibme/jira-api</url>
-        <connection>scm:git:https://gitlab.com/shibme/jira-api.git</connection>
-        <developerConnection>scm:git:shibme@gitlab.com:shibme/jira-api.git</developerConnection>
+        <url>https://github.com/shibme/jira-api</url>
+        <connection>scm:git:https://github.com/shibme/jira-api.git</connection>
+        <developerConnection>scm:git:shibme@github.com:shibme/jira-api.git</developerConnection>
     </scm>
 
     <developers>
         <developer>
             <name>Shibly Meeran</name>
-            <url>https://gitlab.com/shibme</url>
+            <url>https://github.com/shibme</url>
             <id>shibme</id>
         </developer>
     </developers>
