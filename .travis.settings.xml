@@ -7,10 +7,6 @@
             <password>${env.BINTRAY_API_KEY}</password>
         </server>
         <server>
-            <id>gitlab</id>
-            <privateKey>${env.GITLAB_ACCESS_TOKEN}</privateKey>
-        </server>
-        <server>
             <id>github</id>
             <privateKey>${env.GITHUB_ACCESS_TOKEN}</privateKey>
         </server>
